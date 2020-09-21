@@ -41,13 +41,12 @@ class BinarySearchTree {
         /* return the (unchanged) node pointer */
         return root; 
     } 
-  
-    // This method mainly calls InorderRec() 
+   
     void inorder()  { 
        inorderRec(root); 
     } 
   
-    // A utility function to do inorder traversal of BST 
+     
     void inorderRec(BNode root) { 
         if (root != null) { 
             inorderRec(root.left); 
@@ -88,7 +87,7 @@ class BinarySearchTree {
     		if(node.left==null || node.right==null) {
     			System.out.println(" Deleting : "+ key);
     			BNode temp = null;
-    			temp = node.left == null? node.right : node.left;
+    			temp = node.left == null? node.right , node.left;
     			
     			if(temp == null)
     				return null;
